@@ -4,6 +4,8 @@
 #include <arpa/inet.h>
 #include <unistd.h>
 
+#define PORT 8080
+
 int main(){
 
     // create a socket
@@ -14,5 +16,13 @@ int main(){
         return 1;
     }
     printf("socket created successfully\n");
+    
+    // create the address to bind the socket to
+    struct sockaddr_in host_addr;
+    int host_addrlen = sizeof(host_addr);
+
+    host_addr.sin_family = AF_INET;
+    host_addr.sin_port = htons(PORT);
+    host_addr.sin_addr.s_addr = htonl(INADDR_ANY);
     
 }
