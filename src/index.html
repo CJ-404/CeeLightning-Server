@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name, id1, id2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .image-container {
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            max-width: 40%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .image-container h2 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+
+        .image-container p {
+            margin: 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <p>
+        web server using C....
+    </p>
+    <hr>
+    <h1>by Charith Jayarangana</h1>
+
+    <hr>
+
+    <h3>Test GET, POST, DELETE Functionalities</h3>
+    <a href="http://localhost:8080/users.html""><button><h3>Click here to TEST</h3></button></a>
+
+    <hr>
+    
+
+    <h1>Web server functionalities</h1>
+    
+
+
+    <h2>1</h2>
+    <div class="image-container">
+        <img src="http://localhost:8080/assets/files/hello.jpg" alt="Sample Image">
+        <h2>respond to requests with resource files (GET)</h2>
+        <p>when requests a file/resource, server will respond with the correct resource</p>
+        <p>ex: <a href="http://localhost:8080/assets/files/hello.jpg">here</a></p>
+    </div>
+
+    <h2>2</h2>
+    <div class="image-container">
+        <img src="http://localhost:8080/assets/files/post.png" alt="Sample Image">
+        <h2>POST request handling</h2>
+    </div>
+
+    <h2>3</h2>
+    <div class="image-container">
+        <img src="http://localhost:8080/assets/files/delete.png" alt="Sample Image">
+        <h2>DELETE request handling</h2>
+    </div>
+
+    <h2>4</h2>
+    <div class="image-container">
+        <img src="http://localhost:8080/assets/files/hello.jpg" alt="Sample Image">
+        <h2>Error Handling</h2>
+        <p>errors like 404, 400, 415, 501, 500 will handle. And memory errors will handle as 500 (internal server error) status.</p>
+        <p>ex: <a href="http://localhost:8080/abc.png">here</a></p>
+    </div>
+
+    <h2>5</h2>
+    <div class="image-container">
+        <img src="http://localhost:8080/assets/files/hello.jpg" alt="Sample Image">
+        <h2>Json format support</h2>
+        <p>require specific json format. Otherwise server will return 400 | bad request!</p>
+        <p>ex: <a href="http://localhost:8080/users">here</a></p>
+    </div>
+
+</body>
+</html>
